@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let no1, no2, add, sub;
+
+        no1 = parseInt(prompt("enter no1"));
+        
+        no2 = parseInt(prompt("enter no2"));
+
+        async function calculate() {
+
+            let x = new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+
+                    let add = no1 + no2;
+
+                    resolve(add);
+
+                }, 3000);
+
+            })
+            let y = new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+
+                    let sub = no1 - no2;
+
+                    resolve(sub);
+
+                }, 6000);
+
+            })
+
+            console.log(await x);
+
+            console.log(await y);
+        }
+
+        calculate()
+
+    </script>
+
+
+</body>
+
+</html>

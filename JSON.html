@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>JSON</h2>
+
+    <script>
+        let person = {
+            firstname: "Vivek",
+            lastname: "Sutar",
+            age: 24,
+            city: "Kolhapur",
+            State: "Maharashtra",
+        }
+        console.log(person);
+
+        let str = JSON.stringify(person);
+        console.log(str)
+
+        
+        // convert into again object
+
+        let x = JSON.parse(str);
+        
+        console.log(x)
+
+    </script>
+
+</body>
+
+</html>

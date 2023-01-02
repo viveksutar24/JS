@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h2>Events</h2>
+
+    <!-- dblclick -->
+    <p id="para"></p>
+    <button ondblclick="doubleclick()">Dbl click</button>
+
+    <br>
+    <br>
+
+
+    <!-- onkeydown -->
+    <input type="text" onkeydown="keypress()" placeholder="onkeydown">
+
+    <br>
+    <br>
+
+
+    <!-- onmouseover -->
+    <button onmouseover="mouoseover()">Mouseover</button>
+
+    <br>
+    <br>
+
+    <!-- onmouseout -->
+    <button onmo="mouseout()">onmouseout</button>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- onclick -->
+    <button onclick="clicked()">click here</button>
+
+
+
+
+    <script>
+        function doubleclick() {
+            let x = document.getElementById("para").innerHTML = Date()
+        }
+        function keypress() {
+            alert("hey there");
+        }
+
+        function mouoseover() {
+            document.write("Hello i am mouseOver");
+        }
+
+        function mouseout() {
+            document.write("mouse out event !!!");
+        }
+
+        function clicked() {
+            alert("clicked event !!!!");
+        }
+
+
+        // there are so many events
+
+    </script>
+
+
+</body>
+
+</html>

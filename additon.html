@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #no4 {
+            width: 500px;
+            height: 100px;
+            background-color: rgb(187, 216, 206);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="text" id="no1">
+
+    <input type="text" id="no2">
+
+    <button onclick=" clicked()">Click here</button>
+
+    <input type="text" id="no3">
+
+    <div id="no4"></div>
+
+
+    <script>
+        function clicked() {
+
+            // also u can add parseInt
+            let no1 = Number(document.getElementById("no1").value);
+
+            let no2 = Number(document.getElementById("no2").value);
+
+            add = no1 + no2;
+
+            document.getElementById("no3").value = add;
+
+            document.getElementById("no4").innerHTML = add;
+
+            console.log(add);
+        }   
+
+    </script>
+
+</body>
+
+</html>
